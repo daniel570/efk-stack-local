@@ -1,10 +1,9 @@
 version: '2'
 services:
   web:
-#    image: fluentd-node-sample:latest
-    build: ./sample-app
+    image: httpd
     ports:
-            - "3000:3000"
+      - "80:80"
     links:
       - fluentd
     logging:
